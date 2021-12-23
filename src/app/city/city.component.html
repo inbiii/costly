@@ -1,0 +1,21 @@
+<div class="cityContainer">
+    <div class="cityInfoBox">
+
+        <h1 class="cityPage--name">
+            {{city.city}}
+        </h1>
+        <h2 class="state">{{city.state}}</h2>
+        <div class="avgRent"><span class="rentLabel">Average Rent:</span> $ <span
+                class="answerText">{{city.monthlyRent}}.00</span> A MONTH
+        </div>
+        <div class="avgRent"><span class="rentLabel">Average Salary:</span> $ <span
+                class="answerText">{{city.averageSal}}</span> A MONTH
+        </div>
+        <div class="avgRent" id="updateBox"><span class="rentLabel" id="update">Updated</span><span class="answerText"
+                id="updateAnswer">{{city.updatedYear}}</span>
+        </div>
+        <div class="btnBox">
+            <a (click)="goToEdit()" class="btn editBtn">Edit Me!</a>
+        </div>
+    </div>
+</div>

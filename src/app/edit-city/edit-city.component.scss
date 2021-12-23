@@ -1,0 +1,119 @@
+@import '../master-styles.scss';
+.cityContainer {
+    margin-top: 9rem;
+    height: 65vh;
+    width: 100vw;
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+}
+
+.cityInfoBox{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $navColor;
+    padding: 0 3rem;
+    border-radius: 20px;
+    margin-top: 4rem;
+
+}
+
+.cityPage--name{
+    margin-top: 2rem;
+    border-radius: 15px;
+    padding: 1rem 2rem;
+    background-color: $navColor;
+    font-family: "Pushster", cursive;
+    color: white;
+    font-size: 4rem;
+}
+
+.state{
+    letter-spacing: 3px;
+    margin-top: 1rem;
+    font-size: 2rem;
+    justify-self: end;
+    align-self: flex-end;
+}
+
+.avgRent{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.rentLabel {
+    color: $navColor;
+    font-family: 'Pushster', cursive;
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.answerText{
+    font-size: 2.5rem;
+    padding: .7rem;
+    background-color: $navColor;
+    color: $bgcolor;
+    border-radius: 10px;
+}
+
+#updateBox{
+    align-self: center;
+    margin-top: 3rem;
+}
+
+#update{
+    font-size: 1.5rem;
+    background-color: $navColor;
+    color: $bgcolor;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    align-self: flex-end;
+    justify-self: end;
+    margin-right: 0;
+
+}
+
+#updateAnswer {
+    background-color: $bgcolor;
+    color: $navColor;
+    font-size: 2rem;
+}
+.btnBox{
+    margin-top: 7rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.editBtn{
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: $navColor;
+    color: $bgcolor;
+    font-family: 'Pushster', cursive;
+    border-radius: 10px;
+    padding: 1rem;
+    &:hover{
+        border: 1px solid $navColor;
+        background-color: $bgcolor;
+        color: $navColor;
+        size: 1.5;
+        transform: translateY(-2px);
+        transition: all .5s;
+    }
+
+    &:active{
+        background-color: $navColor;
+        color:$bgcolor;
+        transform: translateY(2px);
+        transition: all .1s;
+    }
+}
+
+input {
+    font-size: 2.5rem;
+    width: 18%;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+}

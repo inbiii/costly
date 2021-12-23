@@ -1,0 +1,17 @@
+<div class="cities--container">
+    <h1 class="cityListHeader">Most Expensive Cities</h1>
+    <!-- <div class="listbox"> -->
+    <div *ngFor="let city of cityList; let i = index" class="city--box">
+        <div class="cityid">{{i + 1}}</div>
+        <div class="city--info">
+            <h2 class="city--name">
+                {{city.city}}
+            </h2>
+            <p class="city--rent"><span>$</span>{{city.monthlyRent}}<span class="secondarytext"> a month</span></p>
+        </div>
+        <div class="routelink">
+            <a class="deleteBtn" (click)="delCity(city.id, city)"> x </a>
+            <a [routerLink]="['/app', city.id]" class="cost">Costs Info</a>
+        </div>
+    </div>
+</div>

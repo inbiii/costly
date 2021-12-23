@@ -1,0 +1,91 @@
+@import '../master-styles.scss';
+
+.addBox{
+    margin-top: 14rem;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.inputbox {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+}
+.input {
+    margin: 1.5rem 0;
+}
+
+label { 
+    font-size: 2rem;
+}
+
+input {
+    margin-top: .5rem;
+    width: 100%;
+    padding: .5rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid lightgray;
+}
+
+select {
+    padding: .2rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+
+.btn{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 2rem;
+    justify-content: flex-end;
+    margin-right: -1.5rem;
+}
+
+.inputBox {
+    border: 1px solid $navColor;
+    padding: 3rem 6rem;
+    border-radius: 50px;
+}
+.h2{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+h2{
+    background-color: $navColor;
+    color: $bgcolor;
+    font-size: 3rem;
+    font-family: 'Pushster', cursive;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.subBtn{
+    
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: $navColor;
+    color: $bgcolor;
+    font-family: 'Pushster', cursive;
+    border-radius: 10px;
+    padding: 1rem;
+    &:hover{
+        border: 1px solid $navColor;
+        background-color: $bgcolor;
+        color: $navColor;
+        size: 1.5;
+        transform: translateY(-2px);
+        transition: all .5s;
+    }
+
+    &:active{
+        background-color: $navColor;
+        color:$bgcolor;
+        transform: translateY(2px);
+        transition: all .1s;
+    }
+}

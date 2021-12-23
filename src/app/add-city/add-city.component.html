@@ -1,0 +1,31 @@
+<div class="addBox">
+    <div class="inputBox">
+        <div class="h2">
+            <h2>Add Your City</h2>
+        </div>
+        <div class="input input1">
+            <label for="city">City Name</label>
+            <br>
+            <input type="text" id="city" [(ngModel)]="city.city" class="form-input" required>
+        </div>
+        <div class="input input2">
+            <label for="state">State or Territory: </label><select name="state" id="state" [(ngModel)]="city.state"
+                required>
+                <option *ngFor="let state of states" [ngValue]="state.name">{{state.abv}}</option>
+            </select>
+        </div>
+        <div class="input input3">
+            <label for="city">Average Monthly Rent</label>
+            <br>
+            <input type="text" id="city" [(ngModel)]="tempRent" class="form-input" required>
+        </div>
+        <div class="input input4">
+            <label for="city">Average Salary</label>
+            <br>
+            <input type="text" id="city" [(ngModel)]="tempSal" class="form-input" required>
+        </div>
+        <div class="btn">
+            <a (click)="postMe()" class="subBtn"> Submit</a>
+        </div>
+    </div>
+</div>

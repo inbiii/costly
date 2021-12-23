@@ -1,0 +1,21 @@
+<div class="cityContainer">
+    <div class="cityInfoBox">
+
+        <h1 class="cityPage--name">
+            {{city.city}}
+        </h1>
+        <h2 class="state">{{city.state}}</h2>
+        <div class="avgRent"><span class="rentLabel">Average Rent:</span> $ <input type="text" [(ngModel)]="tempRent"> A
+            MONTH
+        </div>
+        <div class="avgRent"><span class="rentLabel">Average Salary:</span> $ <input type="text" [(ngModel)]="tempSal">
+            A MONTH
+        </div>
+        <div class="avgRent" id="updateBox"><span class="rentLabel" id="update">Updated</span><span class="answerText"
+                id="updateAnswer">{{city.updatedYear}}</span>
+        </div>
+        <div class="btnBox">
+            <a class="btn editBtn" (click)="onClick()" [routerLink]="['/app', city.id]">Submit</a>
+        </div>
+    </div>
+</div>
